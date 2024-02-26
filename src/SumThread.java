@@ -12,13 +12,13 @@ public class SumThread extends Thread{
     @Override
     public void run() {
         long sum = 0;
-        int terms = 0;
+        int additions = 0;
         boolean isStop = false;
         do{
-            sum+=terms*step;
-            terms++;
+            sum+=additions*step;
+            additions++;
             isStop = stopThread.isCanStop();
         } while (!isStop);
-        System.out.println("Thread " + id + " - Sum: " + sum + " - Terms: " + terms);
+        System.out.println("Thread " + id + " - Sum: " + sum + " - Additions: " + additions);
     }
 }

@@ -3,7 +3,7 @@ public class Main {
         StopThread stopThread = new StopThread();
 
 
-        for(int i=1;i<=3;i++)
+        for(int i=1;i<=5;i++)
         {
             new SumThread(i, stopThread, 1).start();
         }
